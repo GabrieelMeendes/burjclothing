@@ -38,6 +38,7 @@ function App() {
           <div className="brand">
             <button hidden onClick={openMenu}>&#9776;</button>
             <img class="product-image" padding-bottom='100' width='100' padding='10' src="images/logo.png" alt="product" />
+            <Link to="/">Inicio</Link>
           </div>
           <div className="header-links">
             <a hidden href="cart.html">Pedidos</a>
