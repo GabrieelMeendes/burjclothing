@@ -31,7 +31,7 @@ function RegisterScreen(props) {
     <form onSubmit={submitHandler} >
       <ul className="form-container">
         <li>
-          <h2>Create Account</h2>
+          <h2>Criação de Conta</h2>
         </li>
         <li>
           {loading && <div>Loading...</div>}
@@ -39,7 +39,7 @@ function RegisterScreen(props) {
         </li>
         <li>
           <label htmlFor="name">
-            Name
+            Nome
           </label>
           <input type="name" name="name" id="name" onChange={(e) => setName(e.target.value)}>
           </input>
@@ -62,11 +62,11 @@ function RegisterScreen(props) {
           </input>
         </li>
         <li>
-          <button type="submit" className="button primary">Register</button>
+          <button type="submit" className="button primary">Registrar</button>
         </li>
         <li>
-          Already have an account?
-          <Link to={redirect === "/" ? "signin" : "signin?redirect=" + redirect} className="button secondary text-center" >Create your amazona account</Link>
+          Já tem registro?
+          <Link to={redirect === "/" ? "signin" : "signin?redirect=" + redirect} className="button secondary text-center" >Entrar</Link>
 
         </li>
 
